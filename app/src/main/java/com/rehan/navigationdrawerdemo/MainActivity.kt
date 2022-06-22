@@ -34,14 +34,17 @@ class MainActivity : AppCompatActivity() {
             when(menuItem.itemId){
                 R.id.nav_home -> {
                     Toast.makeText(this, "Home button is clicked", Toast.LENGTH_LONG).show()
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
                     true
                 }
                 R.id.nav_contact -> {
                     Toast.makeText(this, "Contact button is clicked", Toast.LENGTH_LONG).show()
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
                     true
                 }
                 else ->{
                     Toast.makeText(this, "About button is clicked", Toast.LENGTH_LONG).show()
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
                     true
                 }
             }
